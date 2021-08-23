@@ -1,0 +1,8 @@
+visualdl
+tensorboardX
+paddlenlp
+tqdm
+scipy
+sklearn
+easydict
+sentencepiece

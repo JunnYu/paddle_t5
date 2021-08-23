@@ -1,0 +1,122 @@
+08/20/2021 18:16:18 - INFO - __main__ - **********  Configuration Arguments **********
+08/20/2021 18:16:18 - INFO - __main__ - adam_epsilon: 1e-06
+08/20/2021 18:16:18 - INFO - __main__ - device: gpu
+08/20/2021 18:16:18 - INFO - __main__ - eval_batch_size: 64
+08/20/2021 18:16:18 - INFO - __main__ - gradient_accumulation_steps: 1
+08/20/2021 18:16:18 - INFO - __main__ - is_test: False
+08/20/2021 18:16:18 - INFO - __main__ - learning_rate: 0.0001
+08/20/2021 18:16:18 - INFO - __main__ - logdir: outputs/rte/logs
+08/20/2021 18:16:18 - INFO - __main__ - logging_steps: 100
+08/20/2021 18:16:18 - INFO - __main__ - max_grad_norm: 1.0
+08/20/2021 18:16:18 - INFO - __main__ - max_seq_length: 256
+08/20/2021 18:16:18 - INFO - __main__ - max_train_steps: -1
+08/20/2021 18:16:18 - INFO - __main__ - model_name_or_path: ../t5-base
+08/20/2021 18:16:18 - INFO - __main__ - num_train_epochs: 10
+08/20/2021 18:16:18 - INFO - __main__ - num_workers: 4
+08/20/2021 18:16:18 - INFO - __main__ - output_dir: outputs/rte/
+08/20/2021 18:16:18 - INFO - __main__ - save_steps: 100
+08/20/2021 18:16:18 - INFO - __main__ - scale_loss: 32768
+08/20/2021 18:16:18 - INFO - __main__ - scheduler_type: linear
+08/20/2021 18:16:18 - INFO - __main__ - seed: 42
+08/20/2021 18:16:18 - INFO - __main__ - task_name: rte
+08/20/2021 18:16:18 - INFO - __main__ - train_batch_size: 16
+08/20/2021 18:16:18 - INFO - __main__ - use_amp: False
+08/20/2021 18:16:18 - INFO - __main__ - warmup_radio: 0.1
+08/20/2021 18:16:18 - INFO - __main__ - warmup_steps: -1
+08/20/2021 18:16:18 - INFO - __main__ - weight_decay: 0.01
+08/20/2021 18:16:18 - INFO - __main__ - writer_type: visualdl
+08/20/2021 18:16:18 - INFO - __main__ - **************************************************
+08/20/2021 18:16:22 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:16:22 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:16:22 - INFO - paddle.utils.download - Downloading RTE.zip from https://dataset.bj.bcebos.com/glue/RTE.zip
+08/20/2021 18:16:23 - INFO - paddle.utils.download - File /root/.paddlenlp/datasets/Glue/RTE.zip md5 checking...
+08/20/2021 18:16:23 - INFO - paddle.utils.download - Decompressing /root/.paddlenlp/datasets/Glue/RTE.zip...
+08/20/2021 18:16:24 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:16:24 - INFO - __main__ - ********** Running training **********
+08/20/2021 18:16:24 - INFO - __main__ -   Num examples = 2490
+08/20/2021 18:16:24 - INFO - __main__ -   Num Epochs = 10
+08/20/2021 18:16:24 - INFO - __main__ -   Instantaneous train batch size = 16
+08/20/2021 18:16:24 - INFO - __main__ -   Instantaneous eval batch size = 64
+08/20/2021 18:16:24 - INFO - __main__ -   Total train batch size (w. accumulation) = 16
+08/20/2021 18:16:24 - INFO - __main__ -   Gradient Accumulation steps = 1
+08/20/2021 18:16:24 - INFO - __main__ -   Total optimization steps = 1560
+08/20/2021 18:16:48 - INFO - __main__ - global_steps 100 - lr: 0.0000641026  loss: 0.09810732
+08/20/2021 18:16:48 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:16:48 - INFO - __main__ - ********** Step 100 **********
+08/20/2021 18:16:53 - INFO - __main__ -   accuracy = 74.72924187725631
+08/20/2021 18:17:01 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:17:20 - INFO - __main__ - global_steps 200 - lr: 0.0000968661  loss: 0.07917903
+08/20/2021 18:17:20 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:17:20 - INFO - __main__ - ********** Step 200 **********
+08/20/2021 18:17:25 - INFO - __main__ -   accuracy = 75.81227436823104
+08/20/2021 18:17:33 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:17:57 - INFO - __main__ - global_steps 300 - lr: 0.0000897436  loss: 0.06699480
+08/20/2021 18:17:57 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:17:57 - INFO - __main__ - ********** Step 300 **********
+08/20/2021 18:18:01 - INFO - __main__ -   accuracy = 78.33935018050542
+08/20/2021 18:18:09 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:18:35 - INFO - __main__ - global_steps 400 - lr: 0.0000826211  loss: 0.03791525
+08/20/2021 18:18:35 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:18:35 - INFO - __main__ - ********** Step 400 **********
+08/20/2021 18:18:39 - INFO - __main__ -   accuracy = 78.33935018050542
+08/20/2021 18:18:48 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:19:09 - INFO - __main__ - global_steps 500 - lr: 0.0000754986  loss: 0.02828414
+08/20/2021 18:19:09 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:19:09 - INFO - __main__ - ********** Step 500 **********
+08/20/2021 18:19:14 - INFO - __main__ -   accuracy = 75.45126353790613
+08/20/2021 18:19:22 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:19:44 - INFO - __main__ - global_steps 600 - lr: 0.0000683761  loss: 0.02069233
+08/20/2021 18:19:44 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:19:44 - INFO - __main__ - ********** Step 600 **********
+08/20/2021 18:19:47 - INFO - __main__ -   accuracy = 78.70036101083032
+08/20/2021 18:19:56 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:20:22 - INFO - __main__ - global_steps 700 - lr: 0.0000612536  loss: 0.01160320
+08/20/2021 18:20:22 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:20:22 - INFO - __main__ - ********** Step 700 **********
+08/20/2021 18:20:26 - INFO - __main__ -   accuracy = 81.94945848375451
+08/20/2021 18:20:34 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:20:58 - INFO - __main__ - global_steps 800 - lr: 0.0000541311  loss: 0.01099424
+08/20/2021 18:20:58 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:20:58 - INFO - __main__ - ********** Step 800 **********
+08/20/2021 18:21:02 - INFO - __main__ -   accuracy = 79.42238267148014
+08/20/2021 18:21:11 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:21:30 - INFO - __main__ - global_steps 900 - lr: 0.0000470085  loss: 0.00727538
+08/20/2021 18:21:30 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:21:30 - INFO - __main__ - ********** Step 900 **********
+08/20/2021 18:21:34 - INFO - __main__ -   accuracy = 81.2274368231047
+08/20/2021 18:21:42 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:22:07 - INFO - __main__ - global_steps 1000 - lr: 0.0000398860  loss: 0.00666354
+08/20/2021 18:22:07 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:22:07 - INFO - __main__ - ********** Step 1000 **********
+08/20/2021 18:22:11 - INFO - __main__ -   accuracy = 79.06137184115524
+08/20/2021 18:22:21 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:22:47 - INFO - __main__ - global_steps 1100 - lr: 0.0000327635  loss: 0.00428765
+08/20/2021 18:22:47 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:22:47 - INFO - __main__ - ********** Step 1100 **********
+08/20/2021 18:22:51 - INFO - __main__ -   accuracy = 78.70036101083032
+08/20/2021 18:22:59 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:23:17 - INFO - __main__ - global_steps 1200 - lr: 0.0000256410  loss: 0.00296613
+08/20/2021 18:23:17 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:23:17 - INFO - __main__ - ********** Step 1200 **********
+08/20/2021 18:23:21 - INFO - __main__ -   accuracy = 80.14440433212997
+08/20/2021 18:23:29 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:23:47 - INFO - __main__ - global_steps 1300 - lr: 0.0000185185  loss: 0.00142498
+08/20/2021 18:23:47 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:23:47 - INFO - __main__ - ********** Step 1300 **********
+08/20/2021 18:23:51 - INFO - __main__ -   accuracy = 79.42238267148014
+08/20/2021 18:23:59 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:24:16 - INFO - __main__ - global_steps 1400 - lr: 0.0000113960  loss: 0.00242966
+08/20/2021 18:24:16 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:24:16 - INFO - __main__ - ********** Step 1400 **********
+08/20/2021 18:24:20 - INFO - __main__ -   accuracy = 80.14440433212997
+08/20/2021 18:24:28 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:24:55 - INFO - __main__ - global_steps 1500 - lr: 0.0000042735  loss: 0.00161626
+08/20/2021 18:24:55 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:24:55 - INFO - __main__ - ********** Step 1500 **********
+08/20/2021 18:24:59 - INFO - __main__ -   accuracy = 81.2274368231047
+08/20/2021 18:25:08 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:25:23 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:25:23 - INFO - __main__ - ********** Step 1560 **********
+08/20/2021 18:25:28 - INFO - __main__ -   accuracy = 81.2274368231047
+08/20/2021 18:25:36 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:25:36 - INFO - __main__ - ********** Training Done **********

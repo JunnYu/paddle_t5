@@ -1,0 +1,257 @@
+08/20/2021 18:24:21 - INFO - __main__ - **********  Configuration Arguments **********
+08/20/2021 18:24:21 - INFO - __main__ - adam_epsilon: 1e-06
+08/20/2021 18:24:21 - INFO - __main__ - device: gpu
+08/20/2021 18:24:21 - INFO - __main__ - eval_batch_size: 64
+08/20/2021 18:24:21 - INFO - __main__ - gradient_accumulation_steps: 1
+08/20/2021 18:24:21 - INFO - __main__ - is_test: False
+08/20/2021 18:24:21 - INFO - __main__ - learning_rate: 0.0001
+08/20/2021 18:24:21 - INFO - __main__ - logdir: outputs/sts-b/logs
+08/20/2021 18:24:21 - INFO - __main__ - logging_steps: 100
+08/20/2021 18:24:21 - INFO - __main__ - max_grad_norm: 1.0
+08/20/2021 18:24:21 - INFO - __main__ - max_seq_length: 256
+08/20/2021 18:24:21 - INFO - __main__ - max_train_steps: -1
+08/20/2021 18:24:21 - INFO - __main__ - model_name_or_path: ../t5-base
+08/20/2021 18:24:21 - INFO - __main__ - num_train_epochs: 10
+08/20/2021 18:24:21 - INFO - __main__ - num_workers: 4
+08/20/2021 18:24:21 - INFO - __main__ - output_dir: outputs/sts-b/
+08/20/2021 18:24:21 - INFO - __main__ - save_steps: 100
+08/20/2021 18:24:21 - INFO - __main__ - scale_loss: 32768
+08/20/2021 18:24:21 - INFO - __main__ - scheduler_type: linear
+08/20/2021 18:24:21 - INFO - __main__ - seed: 42
+08/20/2021 18:24:21 - INFO - __main__ - task_name: sts-b
+08/20/2021 18:24:21 - INFO - __main__ - train_batch_size: 16
+08/20/2021 18:24:21 - INFO - __main__ - use_amp: False
+08/20/2021 18:24:21 - INFO - __main__ - warmup_radio: 0.1
+08/20/2021 18:24:21 - INFO - __main__ - warmup_steps: -1
+08/20/2021 18:24:21 - INFO - __main__ - weight_decay: 0.01
+08/20/2021 18:24:21 - INFO - __main__ - writer_type: visualdl
+08/20/2021 18:24:21 - INFO - __main__ - **************************************************
+08/20/2021 18:24:25 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:24:25 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:24:25 - INFO - paddle.utils.download - Downloading STS.zip from https://dataset.bj.bcebos.com/glue/STS.zip
+08/20/2021 18:24:26 - INFO - paddle.utils.download - File /root/.paddlenlp/datasets/Glue/STS.zip md5 checking...
+08/20/2021 18:24:26 - INFO - paddle.utils.download - Decompressing /root/.paddlenlp/datasets/Glue/STS.zip...
+08/20/2021 18:24:27 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:24:27 - INFO - __main__ - ********** Running training **********
+08/20/2021 18:24:27 - INFO - __main__ -   Num examples = 5749
+08/20/2021 18:24:27 - INFO - __main__ -   Num Epochs = 10
+08/20/2021 18:24:27 - INFO - __main__ -   Instantaneous train batch size = 16
+08/20/2021 18:24:27 - INFO - __main__ -   Instantaneous eval batch size = 64
+08/20/2021 18:24:27 - INFO - __main__ -   Total train batch size (w. accumulation) = 16
+08/20/2021 18:24:27 - INFO - __main__ -   Gradient Accumulation steps = 1
+08/20/2021 18:24:27 - INFO - __main__ -   Total optimization steps = 3600
+08/20/2021 18:24:48 - INFO - __main__ - global_steps 100 - lr: 0.0000277778  loss: 2.71499202
+08/20/2021 18:24:48 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:24:48 - INFO - __main__ - ********** Step 100 **********
+08/20/2021 18:25:01 - INFO - __main__ -   pearson_corrcoef = 88.55833843663815
+08/20/2021 18:25:01 - INFO - __main__ -   spearman_corrcoef = 87.94713451637989
+08/20/2021 18:25:10 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:25:28 - INFO - __main__ - global_steps 200 - lr: 0.0000555556  loss: 1.56147644
+08/20/2021 18:25:28 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:25:28 - INFO - __main__ - ********** Step 200 **********
+08/20/2021 18:25:40 - INFO - __main__ -   pearson_corrcoef = 87.61092650653167
+08/20/2021 18:25:40 - INFO - __main__ -   spearman_corrcoef = 87.94594556021312
+08/20/2021 18:25:49 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:26:02 - INFO - __main__ - global_steps 300 - lr: 0.0000833333  loss: 1.32501944
+08/20/2021 18:26:02 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:26:02 - INFO - __main__ - ********** Step 300 **********
+08/20/2021 18:26:14 - INFO - __main__ -   pearson_corrcoef = 86.6635321128942
+08/20/2021 18:26:14 - INFO - __main__ -   spearman_corrcoef = 86.97126629678945
+08/20/2021 18:26:23 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:26:37 - INFO - __main__ - global_steps 400 - lr: 0.0000987654  loss: 1.28275687
+08/20/2021 18:26:37 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:26:37 - INFO - __main__ - ********** Step 400 **********
+08/20/2021 18:26:49 - INFO - __main__ -   pearson_corrcoef = 87.06177702163555
+08/20/2021 18:26:49 - INFO - __main__ -   spearman_corrcoef = 86.71670642758295
+08/20/2021 18:26:58 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:27:11 - INFO - __main__ - global_steps 500 - lr: 0.0000956790  loss: 1.14500660
+08/20/2021 18:27:11 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:27:11 - INFO - __main__ - ********** Step 500 **********
+08/20/2021 18:27:23 - INFO - __main__ -   pearson_corrcoef = 87.609366162283
+08/20/2021 18:27:23 - INFO - __main__ -   spearman_corrcoef = 87.20722175961404
+08/20/2021 18:27:32 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:27:46 - INFO - __main__ - global_steps 600 - lr: 0.0000925926  loss: 1.13010095
+08/20/2021 18:27:46 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:27:46 - INFO - __main__ - ********** Step 600 **********
+08/20/2021 18:27:59 - INFO - __main__ -   pearson_corrcoef = 87.90318128955586
+08/20/2021 18:27:59 - INFO - __main__ -   spearman_corrcoef = 87.94462628402634
+08/20/2021 18:28:08 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:28:25 - INFO - __main__ - global_steps 700 - lr: 0.0000895062  loss: 1.07215138
+08/20/2021 18:28:25 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:28:25 - INFO - __main__ - ********** Step 700 **********
+08/20/2021 18:28:38 - INFO - __main__ -   pearson_corrcoef = 88.58104174975327
+08/20/2021 18:28:38 - INFO - __main__ -   spearman_corrcoef = 88.05386540709621
+08/20/2021 18:28:46 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:29:04 - INFO - __main__ - global_steps 800 - lr: 0.0000864198  loss: 0.99370716
+08/20/2021 18:29:04 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:29:04 - INFO - __main__ - ********** Step 800 **********
+08/20/2021 18:29:16 - INFO - __main__ -   pearson_corrcoef = 89.40034759049578
+08/20/2021 18:29:16 - INFO - __main__ -   spearman_corrcoef = 88.9862871642895
+08/20/2021 18:29:25 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:29:40 - INFO - __main__ - global_steps 900 - lr: 0.0000833333  loss: 1.00302316
+08/20/2021 18:29:40 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:29:40 - INFO - __main__ - ********** Step 900 **********
+08/20/2021 18:29:53 - INFO - __main__ -   pearson_corrcoef = 88.69495985316944
+08/20/2021 18:29:53 - INFO - __main__ -   spearman_corrcoef = 88.46621136305983
+08/20/2021 18:30:01 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:30:17 - INFO - __main__ - global_steps 1000 - lr: 0.0000802469  loss: 0.99935211
+08/20/2021 18:30:17 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:30:17 - INFO - __main__ - ********** Step 1000 **********
+08/20/2021 18:30:30 - INFO - __main__ -   pearson_corrcoef = 88.71414342536966
+08/20/2021 18:30:30 - INFO - __main__ -   spearman_corrcoef = 88.28748153177635
+08/20/2021 18:30:38 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:30:57 - INFO - __main__ - global_steps 1100 - lr: 0.0000771605  loss: 0.98222043
+08/20/2021 18:30:57 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:30:57 - INFO - __main__ - ********** Step 1100 **********
+08/20/2021 18:31:09 - INFO - __main__ -   pearson_corrcoef = 88.75497938241469
+08/20/2021 18:31:09 - INFO - __main__ -   spearman_corrcoef = 88.51557671383046
+08/20/2021 18:31:18 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:31:36 - INFO - __main__ - global_steps 1200 - lr: 0.0000740741  loss: 0.92293042
+08/20/2021 18:31:36 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:31:36 - INFO - __main__ - ********** Step 1200 **********
+08/20/2021 18:31:48 - INFO - __main__ -   pearson_corrcoef = 89.32157155825752
+08/20/2021 18:31:48 - INFO - __main__ -   spearman_corrcoef = 88.98722210971702
+08/20/2021 18:31:57 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:32:10 - INFO - __main__ - global_steps 1300 - lr: 0.0000709877  loss: 0.90528053
+08/20/2021 18:32:10 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:32:10 - INFO - __main__ - ********** Step 1300 **********
+08/20/2021 18:32:24 - INFO - __main__ -   pearson_corrcoef = 90.01142105157058
+08/20/2021 18:32:24 - INFO - __main__ -   spearman_corrcoef = 89.74506377097401
+08/20/2021 18:32:33 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:32:49 - INFO - __main__ - global_steps 1400 - lr: 0.0000679012  loss: 0.92386024
+08/20/2021 18:32:49 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:32:49 - INFO - __main__ - ********** Step 1400 **********
+08/20/2021 18:33:02 - INFO - __main__ -   pearson_corrcoef = 89.53188964366639
+08/20/2021 18:33:02 - INFO - __main__ -   spearman_corrcoef = 89.08421020431977
+08/20/2021 18:33:10 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:33:29 - INFO - __main__ - global_steps 1500 - lr: 0.0000648148  loss: 0.88888004
+08/20/2021 18:33:29 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:33:29 - INFO - __main__ - ********** Step 1500 **********
+08/20/2021 18:33:42 - INFO - __main__ -   pearson_corrcoef = 88.94117085309796
+08/20/2021 18:33:42 - INFO - __main__ -   spearman_corrcoef = 88.90129655084576
+08/20/2021 18:33:50 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:34:06 - INFO - __main__ - global_steps 1600 - lr: 0.0000617284  loss: 0.86634366
+08/20/2021 18:34:06 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:34:06 - INFO - __main__ - ********** Step 1600 **********
+08/20/2021 18:34:19 - INFO - __main__ -   pearson_corrcoef = 89.03882014634715
+08/20/2021 18:34:19 - INFO - __main__ -   spearman_corrcoef = 88.91927650772922
+08/20/2021 18:34:27 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:34:42 - INFO - __main__ - global_steps 1700 - lr: 0.0000586420  loss: 0.84235646
+08/20/2021 18:34:42 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:34:42 - INFO - __main__ - ********** Step 1700 **********
+08/20/2021 18:34:55 - INFO - __main__ -   pearson_corrcoef = 89.65881960606514
+08/20/2021 18:34:55 - INFO - __main__ -   spearman_corrcoef = 89.35268072425244
+08/20/2021 18:35:05 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:35:23 - INFO - __main__ - global_steps 1800 - lr: 0.0000555556  loss: 0.84828702
+08/20/2021 18:35:23 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:35:23 - INFO - __main__ - ********** Step 1800 **********
+08/20/2021 18:35:35 - INFO - __main__ -   pearson_corrcoef = 89.47777097901749
+08/20/2021 18:35:35 - INFO - __main__ -   spearman_corrcoef = 88.95460246321069
+08/20/2021 18:35:44 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:36:02 - INFO - __main__ - global_steps 1900 - lr: 0.0000524691  loss: 0.79304911
+08/20/2021 18:36:02 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:36:02 - INFO - __main__ - ********** Step 1900 **********
+08/20/2021 18:36:15 - INFO - __main__ -   pearson_corrcoef = 89.50874684746921
+08/20/2021 18:36:15 - INFO - __main__ -   spearman_corrcoef = 89.21550473315952
+08/20/2021 18:36:24 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:36:37 - INFO - __main__ - global_steps 2000 - lr: 0.0000493827  loss: 0.78640045
+08/20/2021 18:36:37 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:36:37 - INFO - __main__ - ********** Step 2000 **********
+08/20/2021 18:36:51 - INFO - __main__ -   pearson_corrcoef = 89.51243225888248
+08/20/2021 18:36:51 - INFO - __main__ -   spearman_corrcoef = 88.98472813970838
+08/20/2021 18:36:59 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:37:15 - INFO - __main__ - global_steps 2100 - lr: 0.0000462963  loss: 0.81873299
+08/20/2021 18:37:15 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:37:15 - INFO - __main__ - ********** Step 2100 **********
+08/20/2021 18:37:29 - INFO - __main__ -   pearson_corrcoef = 89.4478814606161
+08/20/2021 18:37:29 - INFO - __main__ -   spearman_corrcoef = 89.19661933830393
+08/20/2021 18:37:39 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:37:58 - INFO - __main__ - global_steps 2200 - lr: 0.0000432099  loss: 0.78926855
+08/20/2021 18:37:58 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:37:58 - INFO - __main__ - ********** Step 2200 **********
+08/20/2021 18:38:10 - INFO - __main__ -   pearson_corrcoef = 90.07423522288033
+08/20/2021 18:38:10 - INFO - __main__ -   spearman_corrcoef = 89.69553079690387
+08/20/2021 18:38:19 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:38:35 - INFO - __main__ - global_steps 2300 - lr: 0.0000401235  loss: 0.74510475
+08/20/2021 18:38:35 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:38:35 - INFO - __main__ - ********** Step 2300 **********
+08/20/2021 18:38:48 - INFO - __main__ -   pearson_corrcoef = 89.80591356026102
+08/20/2021 18:38:48 - INFO - __main__ -   spearman_corrcoef = 89.46197931481086
+08/20/2021 18:38:57 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:39:10 - INFO - __main__ - global_steps 2400 - lr: 0.0000370370  loss: 0.73722485
+08/20/2021 18:39:10 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:39:10 - INFO - __main__ - ********** Step 2400 **********
+08/20/2021 18:39:22 - INFO - __main__ -   pearson_corrcoef = 89.4207847015677
+08/20/2021 18:39:22 - INFO - __main__ -   spearman_corrcoef = 88.94734094876742
+08/20/2021 18:39:31 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:39:45 - INFO - __main__ - global_steps 2500 - lr: 0.0000339506  loss: 0.73261311
+08/20/2021 18:39:45 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:39:45 - INFO - __main__ - ********** Step 2500 **********
+08/20/2021 18:39:57 - INFO - __main__ -   pearson_corrcoef = 89.73875693054924
+08/20/2021 18:39:57 - INFO - __main__ -   spearman_corrcoef = 89.58332218618608
+08/20/2021 18:40:06 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:40:20 - INFO - __main__ - global_steps 2600 - lr: 0.0000308642  loss: 0.71015732
+08/20/2021 18:40:20 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:40:20 - INFO - __main__ - ********** Step 2600 **********
+08/20/2021 18:40:32 - INFO - __main__ -   pearson_corrcoef = 89.65225900188028
+08/20/2021 18:40:32 - INFO - __main__ -   spearman_corrcoef = 89.31132728477297
+08/20/2021 18:40:41 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:40:54 - INFO - __main__ - global_steps 2700 - lr: 0.0000277778  loss: 0.71991141
+08/20/2021 18:40:54 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:40:54 - INFO - __main__ - ********** Step 2700 **********
+08/20/2021 18:41:06 - INFO - __main__ -   pearson_corrcoef = 89.73580311741102
+08/20/2021 18:41:06 - INFO - __main__ -   spearman_corrcoef = 89.39823194363912
+08/20/2021 18:41:15 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:41:28 - INFO - __main__ - global_steps 2800 - lr: 0.0000246914  loss: 0.69127957
+08/20/2021 18:41:28 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:41:28 - INFO - __main__ - ********** Step 2800 **********
+08/20/2021 18:41:40 - INFO - __main__ -   pearson_corrcoef = 89.78249713341944
+08/20/2021 18:41:40 - INFO - __main__ -   spearman_corrcoef = 89.42902354468968
+08/20/2021 18:41:49 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:42:03 - INFO - __main__ - global_steps 2900 - lr: 0.0000216049  loss: 0.69785539
+08/20/2021 18:42:03 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:42:03 - INFO - __main__ - ********** Step 2900 **********
+08/20/2021 18:42:15 - INFO - __main__ -   pearson_corrcoef = 89.39960350291834
+08/20/2021 18:42:15 - INFO - __main__ -   spearman_corrcoef = 89.03935107776437
+08/20/2021 18:42:24 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:42:37 - INFO - __main__ - global_steps 3000 - lr: 0.0000185185  loss: 0.66576146
+08/20/2021 18:42:37 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:42:37 - INFO - __main__ - ********** Step 3000 **********
+08/20/2021 18:42:49 - INFO - __main__ -   pearson_corrcoef = 89.66478671814274
+08/20/2021 18:42:49 - INFO - __main__ -   spearman_corrcoef = 89.37997329637514
+08/20/2021 18:42:58 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:43:11 - INFO - __main__ - global_steps 3100 - lr: 0.0000154321  loss: 0.66421301
+08/20/2021 18:43:11 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:43:11 - INFO - __main__ - ********** Step 3100 **********
+08/20/2021 18:43:23 - INFO - __main__ -   pearson_corrcoef = 89.79369118499307
+08/20/2021 18:43:23 - INFO - __main__ -   spearman_corrcoef = 89.42919175826525
+08/20/2021 18:43:31 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:43:45 - INFO - __main__ - global_steps 3200 - lr: 0.0000123457  loss: 0.66823748
+08/20/2021 18:43:45 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:43:45 - INFO - __main__ - ********** Step 3200 **********
+08/20/2021 18:43:57 - INFO - __main__ -   pearson_corrcoef = 90.0900225146624
+08/20/2021 18:43:57 - INFO - __main__ -   spearman_corrcoef = 89.67809746379055
+08/20/2021 18:44:05 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:44:19 - INFO - __main__ - global_steps 3300 - lr: 0.0000092593  loss: 0.65643745
+08/20/2021 18:44:19 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:44:19 - INFO - __main__ - ********** Step 3300 **********
+08/20/2021 18:44:32 - INFO - __main__ -   pearson_corrcoef = 89.8151202355646
+08/20/2021 18:44:32 - INFO - __main__ -   spearman_corrcoef = 89.48223557842047
+08/20/2021 18:44:40 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:44:53 - INFO - __main__ - global_steps 3400 - lr: 0.0000061728  loss: 0.65162519
+08/20/2021 18:44:53 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:44:53 - INFO - __main__ - ********** Step 3400 **********
+08/20/2021 18:45:06 - INFO - __main__ -   pearson_corrcoef = 89.63996745353495
+08/20/2021 18:45:06 - INFO - __main__ -   spearman_corrcoef = 89.37983409448506
+08/20/2021 18:45:14 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:45:27 - INFO - __main__ - global_steps 3500 - lr: 0.0000030864  loss: 0.65115169
+08/20/2021 18:45:27 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:45:27 - INFO - __main__ - ********** Step 3500 **********
+08/20/2021 18:45:39 - INFO - __main__ -   pearson_corrcoef = 89.79607492323474
+08/20/2021 18:45:39 - INFO - __main__ -   spearman_corrcoef = 89.41150796423183
+08/20/2021 18:45:48 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:46:02 - INFO - __main__ - global_steps 3600 - lr: 0.0000000000  loss: 0.65409804
+08/20/2021 18:46:02 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:46:02 - INFO - __main__ - ********** Step 3600 **********
+08/20/2021 18:46:14 - INFO - __main__ -   pearson_corrcoef = 89.79728356901359
+08/20/2021 18:46:14 - INFO - __main__ -   spearman_corrcoef = 89.4205261989082

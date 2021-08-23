@@ -1,0 +1,8 @@
+transformers
+accelerate
+datasets
+sentencepiece
+tqdm
+nltk
+rouge_score
+torch

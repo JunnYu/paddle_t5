@@ -1,0 +1,11 @@
+visualdl
+tensorboardX
+paddlenlp
+tqdm
+scipy
+sklearn
+easydict
+sentencepiece
+rouge_score
+transformers
+datasets

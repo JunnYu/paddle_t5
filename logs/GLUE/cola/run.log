@@ -1,0 +1,173 @@
+08/20/2021 18:02:07 - INFO - __main__ - **********  Configuration Arguments **********
+08/20/2021 18:02:07 - INFO - __main__ - adam_epsilon: 1e-06
+08/20/2021 18:02:07 - INFO - __main__ - device: gpu
+08/20/2021 18:02:07 - INFO - __main__ - eval_batch_size: 64
+08/20/2021 18:02:07 - INFO - __main__ - gradient_accumulation_steps: 1
+08/20/2021 18:02:07 - INFO - __main__ - is_test: False
+08/20/2021 18:02:07 - INFO - __main__ - learning_rate: 0.0001
+08/20/2021 18:02:07 - INFO - __main__ - logdir: outputs/cola/logs
+08/20/2021 18:02:07 - INFO - __main__ - logging_steps: 200
+08/20/2021 18:02:07 - INFO - __main__ - max_grad_norm: 1.0
+08/20/2021 18:02:07 - INFO - __main__ - max_seq_length: 256
+08/20/2021 18:02:07 - INFO - __main__ - max_train_steps: -1
+08/20/2021 18:02:07 - INFO - __main__ - model_name_or_path: ../t5-base
+08/20/2021 18:02:07 - INFO - __main__ - num_train_epochs: 10
+08/20/2021 18:02:07 - INFO - __main__ - num_workers: 4
+08/20/2021 18:02:07 - INFO - __main__ - output_dir: outputs/cola/
+08/20/2021 18:02:07 - INFO - __main__ - save_steps: 200
+08/20/2021 18:02:07 - INFO - __main__ - scale_loss: 32768
+08/20/2021 18:02:07 - INFO - __main__ - scheduler_type: linear
+08/20/2021 18:02:07 - INFO - __main__ - seed: 42
+08/20/2021 18:02:07 - INFO - __main__ - task_name: cola
+08/20/2021 18:02:07 - INFO - __main__ - train_batch_size: 16
+08/20/2021 18:02:07 - INFO - __main__ - use_amp: False
+08/20/2021 18:02:07 - INFO - __main__ - warmup_radio: 0.1
+08/20/2021 18:02:07 - INFO - __main__ - warmup_steps: -1
+08/20/2021 18:02:07 - INFO - __main__ - weight_decay: 0.01
+08/20/2021 18:02:07 - INFO - __main__ - writer_type: visualdl
+08/20/2021 18:02:07 - INFO - __main__ - **************************************************
+08/20/2021 18:02:11 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:02:12 - INFO - paddle.utils.download - unique_endpoints {''}
+08/20/2021 18:02:12 - INFO - __main__ - ********** Running training **********
+08/20/2021 18:02:12 - INFO - __main__ -   Num examples = 8551
+08/20/2021 18:02:12 - INFO - __main__ -   Num Epochs = 10
+08/20/2021 18:02:12 - INFO - __main__ -   Instantaneous train batch size = 16
+08/20/2021 18:02:12 - INFO - __main__ -   Instantaneous eval batch size = 64
+08/20/2021 18:02:12 - INFO - __main__ -   Total train batch size (w. accumulation) = 16
+08/20/2021 18:02:12 - INFO - __main__ -   Gradient Accumulation steps = 1
+08/20/2021 18:02:12 - INFO - __main__ -   Total optimization steps = 5350
+08/20/2021 18:02:39 - INFO - __main__ - global_steps 200 - lr: 0.0000373832  loss: 0.55037143
+08/20/2021 18:02:39 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:02:39 - INFO - __main__ - ********** Step 200 **********
+08/20/2021 18:02:47 - INFO - __main__ -   matthews_corrcoef = 29.838468767117206
+08/20/2021 18:02:56 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:03:23 - INFO - __main__ - global_steps 400 - lr: 0.0000747664  loss: 0.11697165
+08/20/2021 18:03:23 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:03:23 - INFO - __main__ - ********** Step 400 **********
+08/20/2021 18:03:32 - INFO - __main__ -   matthews_corrcoef = 42.515807154625584
+08/20/2021 18:03:41 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:04:08 - INFO - __main__ - global_steps 600 - lr: 0.0000986501  loss: 0.09760248
+08/20/2021 18:04:08 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:04:08 - INFO - __main__ - ********** Step 600 **********
+08/20/2021 18:04:17 - INFO - __main__ -   matthews_corrcoef = 51.02721398515746
+08/20/2021 18:04:26 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:04:52 - INFO - __main__ - global_steps 800 - lr: 0.0000944964  loss: 0.09306438
+08/20/2021 18:04:52 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:04:52 - INFO - __main__ - ********** Step 800 **********
+08/20/2021 18:05:02 - INFO - __main__ -   matthews_corrcoef = 46.33190482808533
+08/20/2021 18:05:11 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:05:37 - INFO - __main__ - global_steps 1000 - lr: 0.0000903427  loss: 0.08487002
+08/20/2021 18:05:37 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:05:37 - INFO - __main__ - ********** Step 1000 **********
+08/20/2021 18:05:48 - INFO - __main__ -   matthews_corrcoef = 57.94528111058918
+08/20/2021 18:05:56 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:06:23 - INFO - __main__ - global_steps 1200 - lr: 0.0000861890  loss: 0.06947433
+08/20/2021 18:06:23 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:06:23 - INFO - __main__ - ********** Step 1200 **********
+08/20/2021 18:06:33 - INFO - __main__ -   matthews_corrcoef = 55.77353353156735
+08/20/2021 18:06:42 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:07:08 - INFO - __main__ - global_steps 1400 - lr: 0.0000820353  loss: 0.06571763
+08/20/2021 18:07:08 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:07:08 - INFO - __main__ - ********** Step 1400 **********
+08/20/2021 18:07:18 - INFO - __main__ -   matthews_corrcoef = 54.54001814167142
+08/20/2021 18:07:26 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:07:53 - INFO - __main__ - global_steps 1600 - lr: 0.0000778816  loss: 0.06521222
+08/20/2021 18:07:53 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:07:53 - INFO - __main__ - ********** Step 1600 **********
+08/20/2021 18:08:02 - INFO - __main__ -   matthews_corrcoef = 55.613390398598995
+08/20/2021 18:08:11 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:08:38 - INFO - __main__ - global_steps 1800 - lr: 0.0000737279  loss: 0.04818329
+08/20/2021 18:08:38 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:08:38 - INFO - __main__ - ********** Step 1800 **********
+08/20/2021 18:08:48 - INFO - __main__ -   matthews_corrcoef = 57.80839016534659
+08/20/2021 18:08:57 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:09:23 - INFO - __main__ - global_steps 2000 - lr: 0.0000695742  loss: 0.05170826
+08/20/2021 18:09:23 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:09:23 - INFO - __main__ - ********** Step 2000 **********
+08/20/2021 18:09:33 - INFO - __main__ -   matthews_corrcoef = 56.767447304704476
+08/20/2021 18:09:41 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:10:08 - INFO - __main__ - global_steps 2200 - lr: 0.0000654206  loss: 0.04453882
+08/20/2021 18:10:08 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:10:08 - INFO - __main__ - ********** Step 2200 **********
+08/20/2021 18:10:18 - INFO - __main__ -   matthews_corrcoef = 61.73679529232455
+08/20/2021 18:10:27 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:10:54 - INFO - __main__ - global_steps 2400 - lr: 0.0000612669  loss: 0.03346121
+08/20/2021 18:10:54 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:10:54 - INFO - __main__ - ********** Step 2400 **********
+08/20/2021 18:11:04 - INFO - __main__ -   matthews_corrcoef = 58.79759000771466
+08/20/2021 18:11:12 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:11:39 - INFO - __main__ - global_steps 2600 - lr: 0.0000571132  loss: 0.03718565
+08/20/2021 18:11:39 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:11:39 - INFO - __main__ - ********** Step 2600 **********
+08/20/2021 18:11:49 - INFO - __main__ -   matthews_corrcoef = 58.548259339740994
+08/20/2021 18:11:58 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:12:24 - INFO - __main__ - global_steps 2800 - lr: 0.0000529595  loss: 0.03503820
+08/20/2021 18:12:24 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:12:24 - INFO - __main__ - ********** Step 2800 **********
+08/20/2021 18:12:34 - INFO - __main__ -   matthews_corrcoef = 60.592891861794605
+08/20/2021 18:12:43 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:13:09 - INFO - __main__ - global_steps 3000 - lr: 0.0000488058  loss: 0.02987479
+08/20/2021 18:13:09 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:13:09 - INFO - __main__ - ********** Step 3000 **********
+08/20/2021 18:13:18 - INFO - __main__ -   matthews_corrcoef = 57.24162046486999
+08/20/2021 18:13:27 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:13:53 - INFO - __main__ - global_steps 3200 - lr: 0.0000446521  loss: 0.02549623
+08/20/2021 18:13:53 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:13:53 - INFO - __main__ - ********** Step 3200 **********
+08/20/2021 18:14:03 - INFO - __main__ -   matthews_corrcoef = 57.7796630208603
+08/20/2021 18:14:12 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:14:39 - INFO - __main__ - global_steps 3400 - lr: 0.0000404984  loss: 0.02347361
+08/20/2021 18:14:39 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:14:39 - INFO - __main__ - ********** Step 3400 **********
+08/20/2021 18:14:49 - INFO - __main__ -   matthews_corrcoef = 57.6660981486724
+08/20/2021 18:14:58 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:15:24 - INFO - __main__ - global_steps 3600 - lr: 0.0000363448  loss: 0.01888849
+08/20/2021 18:15:24 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:15:24 - INFO - __main__ - ********** Step 3600 **********
+08/20/2021 18:15:34 - INFO - __main__ -   matthews_corrcoef = 58.61472777603488
+08/20/2021 18:15:43 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:16:10 - INFO - __main__ - global_steps 3800 - lr: 0.0000321911  loss: 0.02247204
+08/20/2021 18:16:10 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:16:10 - INFO - __main__ - ********** Step 3800 **********
+08/20/2021 18:16:20 - INFO - __main__ -   matthews_corrcoef = 57.781840336856746
+08/20/2021 18:16:29 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:16:59 - INFO - __main__ - global_steps 4000 - lr: 0.0000280374  loss: 0.01939758
+08/20/2021 18:16:59 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:16:59 - INFO - __main__ - ********** Step 4000 **********
+08/20/2021 18:17:11 - INFO - __main__ -   matthews_corrcoef = 60.076213594157515
+08/20/2021 18:17:19 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:17:49 - INFO - __main__ - global_steps 4200 - lr: 0.0000238837  loss: 0.01654935
+08/20/2021 18:17:49 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:17:49 - INFO - __main__ - ********** Step 4200 **********
+08/20/2021 18:18:00 - INFO - __main__ -   matthews_corrcoef = 58.61472777603488
+08/20/2021 18:18:09 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:18:40 - INFO - __main__ - global_steps 4400 - lr: 0.0000197300  loss: 0.01443508
+08/20/2021 18:18:40 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:18:40 - INFO - __main__ - ********** Step 4400 **********
+08/20/2021 18:18:51 - INFO - __main__ -   matthews_corrcoef = 57.80903072486336
+08/20/2021 18:19:00 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:19:29 - INFO - __main__ - global_steps 4600 - lr: 0.0000155763  loss: 0.01413494
+08/20/2021 18:19:29 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:19:29 - INFO - __main__ - ********** Step 4600 **********
+08/20/2021 18:19:41 - INFO - __main__ -   matthews_corrcoef = 57.13110471171509
+08/20/2021 18:19:50 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:20:20 - INFO - __main__ - global_steps 4800 - lr: 0.0000114226  loss: 0.01318651
+08/20/2021 18:20:20 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:20:20 - INFO - __main__ - ********** Step 4800 **********
+08/20/2021 18:20:31 - INFO - __main__ -   matthews_corrcoef = 58.06473000395166
+08/20/2021 18:20:40 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:21:10 - INFO - __main__ - global_steps 5000 - lr: 0.0000072690  loss: 0.01307107
+08/20/2021 18:21:10 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:21:10 - INFO - __main__ - ********** Step 5000 **********
+08/20/2021 18:21:22 - INFO - __main__ -   matthews_corrcoef = 59.56102836701802
+08/20/2021 18:21:30 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:22:00 - INFO - __main__ - global_steps 5200 - lr: 0.0000031153  loss: 0.00890945
+08/20/2021 18:22:00 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:22:00 - INFO - __main__ - ********** Step 5200 **********
+08/20/2021 18:22:11 - INFO - __main__ -   matthews_corrcoef = 58.800949377178846
+08/20/2021 18:22:22 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:22:46 - INFO - __main__ - ********** Running evaluating **********
+08/20/2021 18:22:46 - INFO - __main__ - ********** Step 5350 **********
+08/20/2021 18:22:56 - INFO - __main__ -   matthews_corrcoef = 58.79831868448624
+08/20/2021 18:23:05 - INFO - __main__ - ********** Evaluating Done **********
+08/20/2021 18:23:05 - INFO - __main__ - ********** Training Done **********

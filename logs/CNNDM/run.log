@@ -1,0 +1,431 @@
+08/22/2021 13:22:30 - INFO - __main__ - **********  Configuration Arguments **********
+08/22/2021 13:22:30 - INFO - __main__ - adam_epsilon: 1e-06
+08/22/2021 13:22:30 - INFO - __main__ - device: gpu
+08/22/2021 13:22:30 - INFO - __main__ - eval_batch_size: 24
+08/22/2021 13:22:30 - INFO - __main__ - gradient_accumulation_steps: 2
+08/22/2021 13:22:30 - INFO - __main__ - learning_rate: 0.0003
+08/22/2021 13:22:30 - INFO - __main__ - logdir: outputs/logs
+08/22/2021 13:22:30 - INFO - __main__ - logging_steps: 100
+08/22/2021 13:22:30 - INFO - __main__ - max_grad_norm: 3.0
+08/22/2021 13:22:30 - INFO - __main__ - max_source_length: 1024
+08/22/2021 13:22:30 - INFO - __main__ - max_target_length: 128
+08/22/2021 13:22:30 - INFO - __main__ - max_train_steps: 110000
+08/22/2021 13:22:30 - INFO - __main__ - model_name_or_path: data/t5-base
+08/22/2021 13:22:30 - INFO - __main__ - num_beams: 2
+08/22/2021 13:22:30 - INFO - __main__ - num_train_epochs: 3
+08/22/2021 13:22:30 - INFO - __main__ - num_workers: 0
+08/22/2021 13:22:30 - INFO - __main__ - output_dir: outputs
+08/22/2021 13:22:30 - INFO - __main__ - save_steps: 5000
+08/22/2021 13:22:30 - INFO - __main__ - scale_loss: 32768
+08/22/2021 13:22:30 - INFO - __main__ - scheduler_type: linear
+08/22/2021 13:22:30 - INFO - __main__ - seed: 42
+08/22/2021 13:22:30 - INFO - __main__ - source_prefix: summarize: 
+08/22/2021 13:22:30 - INFO - __main__ - train_batch_size: 6
+08/22/2021 13:22:30 - INFO - __main__ - use_amp: False
+08/22/2021 13:22:30 - INFO - __main__ - val_max_target_length: 128
+08/22/2021 13:22:30 - INFO - __main__ - warmup_radio: 0.1
+08/22/2021 13:22:30 - INFO - __main__ - warmup_steps: -1
+08/22/2021 13:22:30 - INFO - __main__ - weight_decay: 0.01
+08/22/2021 13:22:30 - INFO - __main__ - writer_type: visualdl
+08/22/2021 13:22:30 - INFO - __main__ - **************************************************
+08/22/2021 13:23:27 - INFO - __main__ - ********** Running training **********
+08/22/2021 13:23:27 - INFO - __main__ -   Num examples = 287113
+08/22/2021 13:23:27 - INFO - __main__ -   Num Epochs = 5
+08/22/2021 13:23:27 - INFO - __main__ -   Instantaneous train batch size = 6
+08/22/2021 13:23:27 - INFO - __main__ -   Instantaneous eval batch size = 24
+08/22/2021 13:23:27 - INFO - __main__ -   Total train batch size (w. accumulation) = 12
+08/22/2021 13:23:27 - INFO - __main__ -   Gradient Accumulation steps = 2
+08/22/2021 13:23:27 - INFO - __main__ -   Total optimization steps = 110000
+08/22/2021 13:26:09 - INFO - __main__ - global_steps 100 - lr: 0.0003000000  loss: 1.07287069
+08/22/2021 13:28:51 - INFO - __main__ - global_steps 200 - lr: 0.0003000000  loss: 1.09370015
+08/22/2021 13:31:34 - INFO - __main__ - global_steps 300 - lr: 0.0003000000  loss: 1.10583443
+08/22/2021 13:34:17 - INFO - __main__ - global_steps 400 - lr: 0.0003000000  loss: 1.08861147
+08/22/2021 13:37:00 - INFO - __main__ - global_steps 500 - lr: 0.0003000000  loss: 1.12466571
+08/22/2021 13:39:42 - INFO - __main__ - global_steps 600 - lr: 0.0003000000  loss: 1.10232389
+08/22/2021 13:42:25 - INFO - __main__ - global_steps 700 - lr: 0.0003000000  loss: 1.09554778
+08/22/2021 13:45:08 - INFO - __main__ - global_steps 800 - lr: 0.0003000000  loss: 1.07297004
+08/22/2021 13:47:52 - INFO - __main__ - global_steps 900 - lr: 0.0003000000  loss: 1.10485925
+08/22/2021 13:50:35 - INFO - __main__ - global_steps 1000 - lr: 0.0003000000  loss: 1.11307194
+08/22/2021 13:53:17 - INFO - __main__ - global_steps 1100 - lr: 0.0003000000  loss: 1.07857797
+08/22/2021 13:56:00 - INFO - __main__ - global_steps 1200 - lr: 0.0003000000  loss: 1.09280154
+08/22/2021 13:58:43 - INFO - __main__ - global_steps 1300 - lr: 0.0003000000  loss: 1.08371922
+08/22/2021 14:01:26 - INFO - __main__ - global_steps 1400 - lr: 0.0003000000  loss: 1.09487532
+08/22/2021 14:04:09 - INFO - __main__ - global_steps 1500 - lr: 0.0003000000  loss: 1.07777486
+08/22/2021 14:06:51 - INFO - __main__ - global_steps 1600 - lr: 0.0003000000  loss: 1.11481717
+08/22/2021 14:09:33 - INFO - __main__ - global_steps 1700 - lr: 0.0003000000  loss: 1.12734049
+08/22/2021 14:12:16 - INFO - __main__ - global_steps 1800 - lr: 0.0003000000  loss: 1.11833590
+08/22/2021 14:14:59 - INFO - __main__ - global_steps 1900 - lr: 0.0003000000  loss: 1.11215958
+08/22/2021 14:17:42 - INFO - __main__ - global_steps 2000 - lr: 0.0003000000  loss: 1.09986301
+08/22/2021 14:20:25 - INFO - __main__ - global_steps 2100 - lr: 0.0003000000  loss: 1.08185208
+08/22/2021 14:23:08 - INFO - __main__ - global_steps 2200 - lr: 0.0003000000  loss: 1.11297031
+08/22/2021 14:25:50 - INFO - __main__ - global_steps 2300 - lr: 0.0003000000  loss: 1.08010890
+08/22/2021 14:28:33 - INFO - __main__ - global_steps 2400 - lr: 0.0003000000  loss: 1.10138126
+08/22/2021 14:31:16 - INFO - __main__ - global_steps 2500 - lr: 0.0003000000  loss: 1.09962809
+08/22/2021 14:33:58 - INFO - __main__ - global_steps 2600 - lr: 0.0003000000  loss: 1.13876041
+08/22/2021 14:36:41 - INFO - __main__ - global_steps 2700 - lr: 0.0003000000  loss: 1.08004601
+08/22/2021 14:39:24 - INFO - __main__ - global_steps 2800 - lr: 0.0003000000  loss: 1.10107727
+08/22/2021 14:42:06 - INFO - __main__ - global_steps 2900 - lr: 0.0003000000  loss: 1.08083688
+08/22/2021 14:44:49 - INFO - __main__ - global_steps 3000 - lr: 0.0003000000  loss: 1.10286802
+08/22/2021 14:47:31 - INFO - __main__ - global_steps 3100 - lr: 0.0003000000  loss: 1.09216492
+08/22/2021 14:50:14 - INFO - __main__ - global_steps 3200 - lr: 0.0003000000  loss: 1.11770595
+08/22/2021 14:52:58 - INFO - __main__ - global_steps 3300 - lr: 0.0003000000  loss: 1.10306141
+08/22/2021 14:55:40 - INFO - __main__ - global_steps 3400 - lr: 0.0003000000  loss: 1.11169664
+08/22/2021 14:58:24 - INFO - __main__ - global_steps 3500 - lr: 0.0003000000  loss: 1.08006267
+08/22/2021 15:01:06 - INFO - __main__ - global_steps 3600 - lr: 0.0003000000  loss: 1.10725021
+08/22/2021 15:03:49 - INFO - __main__ - global_steps 3700 - lr: 0.0003000000  loss: 1.10602685
+08/22/2021 15:06:32 - INFO - __main__ - global_steps 3800 - lr: 0.0003000000  loss: 1.11929674
+08/22/2021 15:09:15 - INFO - __main__ - global_steps 3900 - lr: 0.0003000000  loss: 1.12296293
+08/22/2021 15:11:58 - INFO - __main__ - global_steps 4000 - lr: 0.0003000000  loss: 1.11416407
+08/22/2021 15:14:40 - INFO - __main__ - global_steps 4100 - lr: 0.0003000000  loss: 1.08529502
+08/22/2021 15:17:23 - INFO - __main__ - global_steps 4200 - lr: 0.0003000000  loss: 1.08942591
+08/22/2021 15:20:06 - INFO - __main__ - global_steps 4300 - lr: 0.0003000000  loss: 1.11274639
+08/22/2021 15:22:49 - INFO - __main__ - global_steps 4400 - lr: 0.0003000000  loss: 1.10844079
+08/22/2021 15:25:32 - INFO - __main__ - global_steps 4500 - lr: 0.0003000000  loss: 1.10379490
+08/22/2021 15:28:15 - INFO - __main__ - global_steps 4600 - lr: 0.0003000000  loss: 1.07136964
+08/22/2021 15:30:57 - INFO - __main__ - global_steps 4700 - lr: 0.0003000000  loss: 1.08023608
+08/22/2021 15:33:40 - INFO - __main__ - global_steps 4800 - lr: 0.0003000000  loss: 1.09252823
+08/22/2021 15:36:23 - INFO - __main__ - global_steps 4900 - lr: 0.0003000000  loss: 1.09210604
+08/22/2021 15:39:05 - INFO - __main__ - global_steps 5000 - lr: 0.0003000000  loss: 1.10003735
+08/22/2021 15:39:05 - INFO - __main__ - ********** Running evaluating **********
+08/22/2021 15:39:05 - INFO - __main__ - ********** Step 5000 **********
+08/22/2021 16:50:59 - INFO - __main__ -   rouge1 = 41.8003
+08/22/2021 16:50:59 - INFO - __main__ -   rouge2 = 19.4726
+08/22/2021 16:50:59 - INFO - __main__ -   rougeL = 29.7378
+08/22/2021 16:50:59 - INFO - __main__ -   rougeLsum = 39.0412
+08/22/2021 16:50:59 - INFO - __main__ - ********** Evaluating Done **********
+08/22/2021 16:53:41 - INFO - __main__ - global_steps 5100 - lr: 0.0003000000  loss: 1.10916323
+08/22/2021 16:56:23 - INFO - __main__ - global_steps 5200 - lr: 0.0003000000  loss: 1.09486645
+08/22/2021 16:59:04 - INFO - __main__ - global_steps 5300 - lr: 0.0003000000  loss: 1.09738244
+08/22/2021 17:01:46 - INFO - __main__ - global_steps 5400 - lr: 0.0003000000  loss: 1.10930155
+08/22/2021 17:04:28 - INFO - __main__ - global_steps 5500 - lr: 0.0003000000  loss: 1.10430143
+08/22/2021 17:07:10 - INFO - __main__ - global_steps 5600 - lr: 0.0003000000  loss: 1.11463412
+08/22/2021 17:09:52 - INFO - __main__ - global_steps 5700 - lr: 0.0003000000  loss: 1.09853743
+08/22/2021 17:12:34 - INFO - __main__ - global_steps 5800 - lr: 0.0003000000  loss: 1.10675458
+08/22/2021 17:15:15 - INFO - __main__ - global_steps 5900 - lr: 0.0003000000  loss: 1.10045865
+08/22/2021 17:17:58 - INFO - __main__ - global_steps 6000 - lr: 0.0003000000  loss: 1.07870972
+08/22/2021 17:20:40 - INFO - __main__ - global_steps 6100 - lr: 0.0003000000  loss: 1.11499372
+08/22/2021 17:23:22 - INFO - __main__ - global_steps 6200 - lr: 0.0003000000  loss: 1.12683183
+08/22/2021 17:26:04 - INFO - __main__ - global_steps 6300 - lr: 0.0003000000  loss: 1.11122755
+08/22/2021 17:28:46 - INFO - __main__ - global_steps 6400 - lr: 0.0003000000  loss: 1.09999462
+08/22/2021 17:31:28 - INFO - __main__ - global_steps 6500 - lr: 0.0003000000  loss: 1.10824466
+08/22/2021 17:34:10 - INFO - __main__ - global_steps 6600 - lr: 0.0003000000  loss: 1.09708915
+08/22/2021 17:36:52 - INFO - __main__ - global_steps 6700 - lr: 0.0003000000  loss: 1.10346087
+08/22/2021 17:39:33 - INFO - __main__ - global_steps 6800 - lr: 0.0003000000  loss: 1.09913176
+08/22/2021 17:42:15 - INFO - __main__ - global_steps 6900 - lr: 0.0003000000  loss: 1.11455301
+08/22/2021 17:44:57 - INFO - __main__ - global_steps 7000 - lr: 0.0003000000  loss: 1.07897193
+08/22/2021 17:47:39 - INFO - __main__ - global_steps 7100 - lr: 0.0003000000  loss: 1.10555639
+08/22/2021 17:50:21 - INFO - __main__ - global_steps 7200 - lr: 0.0003000000  loss: 1.08299275
+08/22/2021 17:53:04 - INFO - __main__ - global_steps 7300 - lr: 0.0003000000  loss: 1.09171972
+08/22/2021 17:55:45 - INFO - __main__ - global_steps 7400 - lr: 0.0003000000  loss: 1.09794928
+08/22/2021 17:58:27 - INFO - __main__ - global_steps 7500 - lr: 0.0003000000  loss: 1.07832160
+08/22/2021 18:01:08 - INFO - __main__ - global_steps 7600 - lr: 0.0003000000  loss: 1.10148307
+08/22/2021 18:03:50 - INFO - __main__ - global_steps 7700 - lr: 0.0003000000  loss: 1.09098006
+08/22/2021 18:06:33 - INFO - __main__ - global_steps 7800 - lr: 0.0003000000  loss: 1.11260816
+08/22/2021 18:09:14 - INFO - __main__ - global_steps 7900 - lr: 0.0003000000  loss: 1.12488032
+08/22/2021 18:11:57 - INFO - __main__ - global_steps 8000 - lr: 0.0003000000  loss: 1.09524796
+08/22/2021 18:14:39 - INFO - __main__ - global_steps 8100 - lr: 0.0003000000  loss: 1.08153846
+08/22/2021 18:17:21 - INFO - __main__ - global_steps 8200 - lr: 0.0003000000  loss: 1.12522960
+08/22/2021 18:20:03 - INFO - __main__ - global_steps 8300 - lr: 0.0003000000  loss: 1.08008756
+08/22/2021 18:22:45 - INFO - __main__ - global_steps 8400 - lr: 0.0003000000  loss: 1.07985499
+08/22/2021 18:25:27 - INFO - __main__ - global_steps 8500 - lr: 0.0003000000  loss: 1.08258939
+08/22/2021 18:28:08 - INFO - __main__ - global_steps 8600 - lr: 0.0003000000  loss: 1.06959833
+08/22/2021 18:30:50 - INFO - __main__ - global_steps 8700 - lr: 0.0003000000  loss: 1.09190362
+08/22/2021 18:33:31 - INFO - __main__ - global_steps 8800 - lr: 0.0003000000  loss: 1.09013915
+08/22/2021 18:36:13 - INFO - __main__ - global_steps 8900 - lr: 0.0003000000  loss: 1.08951244
+08/22/2021 18:38:53 - INFO - __main__ - global_steps 9000 - lr: 0.0003000000  loss: 1.08820589
+08/22/2021 18:41:36 - INFO - __main__ - global_steps 9100 - lr: 0.0003000000  loss: 1.08337121
+08/22/2021 18:44:18 - INFO - __main__ - global_steps 9200 - lr: 0.0003000000  loss: 1.10564191
+08/22/2021 18:46:59 - INFO - __main__ - global_steps 9300 - lr: 0.0003000000  loss: 1.10418996
+08/22/2021 18:49:41 - INFO - __main__ - global_steps 9400 - lr: 0.0003000000  loss: 1.09749979
+08/22/2021 18:52:23 - INFO - __main__ - global_steps 9500 - lr: 0.0003000000  loss: 1.09145076
+08/22/2021 18:55:04 - INFO - __main__ - global_steps 9600 - lr: 0.0003000000  loss: 1.07908861
+08/22/2021 18:57:46 - INFO - __main__ - global_steps 9700 - lr: 0.0003000000  loss: 1.10863098
+08/22/2021 19:00:28 - INFO - __main__ - global_steps 9800 - lr: 0.0003000000  loss: 1.08013808
+08/22/2021 19:03:11 - INFO - __main__ - global_steps 9900 - lr: 0.0003000000  loss: 1.08670879
+08/22/2021 19:05:55 - INFO - __main__ - global_steps 10000 - lr: 0.0003000000  loss: 1.08109079
+08/22/2021 19:05:55 - INFO - __main__ - ********** Running evaluating **********
+08/22/2021 19:05:55 - INFO - __main__ - ********** Step 10000 **********
+08/22/2021 20:21:59 - INFO - __main__ -   rouge1 = 42.4115
+08/22/2021 20:21:59 - INFO - __main__ -   rouge2 = 19.7674
+08/22/2021 20:21:59 - INFO - __main__ -   rougeL = 30.0289
+08/22/2021 20:21:59 - INFO - __main__ -   rougeLsum = 39.5709
+08/22/2021 20:21:59 - INFO - __main__ - ********** Evaluating Done **********
+08/22/2021 20:24:44 - INFO - __main__ - global_steps 10100 - lr: 0.0003000000  loss: 1.08710557
+08/22/2021 20:27:28 - INFO - __main__ - global_steps 10200 - lr: 0.0003000000  loss: 1.07487856
+08/22/2021 20:30:13 - INFO - __main__ - global_steps 10300 - lr: 0.0003000000  loss: 1.10161588
+08/22/2021 20:32:57 - INFO - __main__ - global_steps 10400 - lr: 0.0003000000  loss: 1.08796577
+08/22/2021 20:35:42 - INFO - __main__ - global_steps 10500 - lr: 0.0003000000  loss: 1.07584662
+08/22/2021 20:38:25 - INFO - __main__ - global_steps 10600 - lr: 0.0003000000  loss: 1.09203164
+08/22/2021 20:41:09 - INFO - __main__ - global_steps 10700 - lr: 0.0003000000  loss: 1.07336734
+08/22/2021 20:43:53 - INFO - __main__ - global_steps 10800 - lr: 0.0003000000  loss: 1.10138847
+08/22/2021 20:46:36 - INFO - __main__ - global_steps 10900 - lr: 0.0003000000  loss: 1.07222172
+08/22/2021 20:49:18 - INFO - __main__ - global_steps 11000 - lr: 0.0003000000  loss: 1.10266744
+08/22/2021 20:52:01 - INFO - __main__ - global_steps 11100 - lr: 0.0003000000  loss: 1.09283126
+08/22/2021 20:54:44 - INFO - __main__ - global_steps 11200 - lr: 0.0003000000  loss: 1.07694547
+08/22/2021 20:57:28 - INFO - __main__ - global_steps 11300 - lr: 0.0003000000  loss: 1.08354078
+08/22/2021 21:00:11 - INFO - __main__ - global_steps 11400 - lr: 0.0003000000  loss: 1.10202891
+08/22/2021 21:02:56 - INFO - __main__ - global_steps 11500 - lr: 0.0003000000  loss: 1.09629777
+08/22/2021 21:05:40 - INFO - __main__ - global_steps 11600 - lr: 0.0003000000  loss: 1.10844749
+08/22/2021 21:08:24 - INFO - __main__ - global_steps 11700 - lr: 0.0003000000  loss: 1.06757653
+08/22/2021 21:11:08 - INFO - __main__ - global_steps 11800 - lr: 0.0003000000  loss: 1.07308817
+08/22/2021 21:13:52 - INFO - __main__ - global_steps 11900 - lr: 0.0003000000  loss: 1.10460261
+08/22/2021 21:16:36 - INFO - __main__ - global_steps 12000 - lr: 0.0003000000  loss: 1.08058044
+08/22/2021 21:19:20 - INFO - __main__ - global_steps 12100 - lr: 0.0003000000  loss: 1.08962634
+08/22/2021 21:22:04 - INFO - __main__ - global_steps 12200 - lr: 0.0003000000  loss: 1.10983572
+08/22/2021 21:24:49 - INFO - __main__ - global_steps 12300 - lr: 0.0003000000  loss: 1.07307738
+08/22/2021 21:27:32 - INFO - __main__ - global_steps 12400 - lr: 0.0003000000  loss: 1.09163596
+08/22/2021 21:30:17 - INFO - __main__ - global_steps 12500 - lr: 0.0003000000  loss: 1.09298618
+08/22/2021 21:33:00 - INFO - __main__ - global_steps 12600 - lr: 0.0003000000  loss: 1.08072074
+08/22/2021 21:35:45 - INFO - __main__ - global_steps 12700 - lr: 0.0003000000  loss: 1.10804674
+08/22/2021 21:38:29 - INFO - __main__ - global_steps 12800 - lr: 0.0003000000  loss: 1.09244087
+08/22/2021 21:41:13 - INFO - __main__ - global_steps 12900 - lr: 0.0003000000  loss: 1.07391790
+08/22/2021 21:43:57 - INFO - __main__ - global_steps 13000 - lr: 0.0003000000  loss: 1.09949137
+08/22/2021 21:46:41 - INFO - __main__ - global_steps 13100 - lr: 0.0003000000  loss: 1.07289005
+08/22/2021 21:49:25 - INFO - __main__ - global_steps 13200 - lr: 0.0003000000  loss: 1.08312446
+08/22/2021 21:52:09 - INFO - __main__ - global_steps 13300 - lr: 0.0003000000  loss: 1.10387619
+08/22/2021 21:54:54 - INFO - __main__ - global_steps 13400 - lr: 0.0003000000  loss: 1.07288584
+08/22/2021 21:57:37 - INFO - __main__ - global_steps 13500 - lr: 0.0003000000  loss: 1.07284753
+08/22/2021 22:00:19 - INFO - __main__ - global_steps 13600 - lr: 0.0003000000  loss: 1.08612017
+08/22/2021 22:03:01 - INFO - __main__ - global_steps 13700 - lr: 0.0003000000  loss: 1.07407482
+08/22/2021 22:05:44 - INFO - __main__ - global_steps 13800 - lr: 0.0003000000  loss: 1.07953593
+08/22/2021 22:08:26 - INFO - __main__ - global_steps 13900 - lr: 0.0003000000  loss: 1.07236231
+08/22/2021 22:11:08 - INFO - __main__ - global_steps 14000 - lr: 0.0003000000  loss: 1.09862806
+08/22/2021 22:13:50 - INFO - __main__ - global_steps 14100 - lr: 0.0003000000  loss: 1.06584885
+08/22/2021 22:16:32 - INFO - __main__ - global_steps 14200 - lr: 0.0003000000  loss: 1.08354292
+08/22/2021 22:19:13 - INFO - __main__ - global_steps 14300 - lr: 0.0003000000  loss: 1.09647719
+08/22/2021 22:21:54 - INFO - __main__ - global_steps 14400 - lr: 0.0003000000  loss: 1.09595982
+08/22/2021 22:24:37 - INFO - __main__ - global_steps 14500 - lr: 0.0003000000  loss: 1.08529429
+08/22/2021 22:27:19 - INFO - __main__ - global_steps 14600 - lr: 0.0003000000  loss: 1.09410926
+08/22/2021 22:30:01 - INFO - __main__ - global_steps 14700 - lr: 0.0003000000  loss: 1.09120494
+08/22/2021 22:32:43 - INFO - __main__ - global_steps 14800 - lr: 0.0003000000  loss: 1.11339525
+08/22/2021 22:35:24 - INFO - __main__ - global_steps 14900 - lr: 0.0003000000  loss: 1.09517900
+08/22/2021 22:38:05 - INFO - __main__ - global_steps 15000 - lr: 0.0003000000  loss: 1.08861943
+08/22/2021 22:38:05 - INFO - __main__ - ********** Running evaluating **********
+08/22/2021 22:38:05 - INFO - __main__ - ********** Step 15000 **********08/22/2021 23:46:56 - INFO - __main__ -   rouge1 = 42.5132
+08/22/2021 23:46:56 - INFO - __main__ -   rouge2 = 20.0211
+08/22/2021 23:46:56 - INFO - __main__ -   rougeL = 30.2316
+08/22/2021 23:46:56 - INFO - __main__ -   rougeLsum = 39.7004
+08/22/2021 23:46:56 - INFO - __main__ - ********** Evaluating Done **********
+08/22/2021 23:49:38 - INFO - __main__ - global_steps 15100 - lr: 0.0003000000  loss: 1.10781790
+08/22/2021 23:52:20 - INFO - __main__ - global_steps 15200 - lr: 0.0003000000  loss: 1.07093078
+08/22/2021 23:55:03 - INFO - __main__ - global_steps 15300 - lr: 0.0003000000  loss: 1.08614066
+08/22/2021 23:57:45 - INFO - __main__ - global_steps 15400 - lr: 0.0003000000  loss: 1.06636422
+08/23/2021 00:00:27 - INFO - __main__ - global_steps 15500 - lr: 0.0003000000  loss: 1.09539973
+08/23/2021 00:03:09 - INFO - __main__ - global_steps 15600 - lr: 0.0003000000  loss: 1.08419319
+08/23/2021 00:05:50 - INFO - __main__ - global_steps 15700 - lr: 0.0003000000  loss: 1.07113621
+08/23/2021 00:08:32 - INFO - __main__ - global_steps 15800 - lr: 0.0003000000  loss: 1.07112838
+08/23/2021 00:11:13 - INFO - __main__ - global_steps 15900 - lr: 0.0003000000  loss: 1.10651012
+08/23/2021 00:13:55 - INFO - __main__ - global_steps 16000 - lr: 0.0003000000  loss: 1.06653725
+08/23/2021 00:16:37 - INFO - __main__ - global_steps 16100 - lr: 0.0003000000  loss: 1.10421610
+08/23/2021 00:19:19 - INFO - __main__ - global_steps 16200 - lr: 0.0003000000  loss: 1.08573276
+08/23/2021 00:22:01 - INFO - __main__ - global_steps 16300 - lr: 0.0003000000  loss: 1.09660646
+08/23/2021 00:24:42 - INFO - __main__ - global_steps 16400 - lr: 0.0003000000  loss: 1.07168880
+08/23/2021 00:27:23 - INFO - __main__ - global_steps 16500 - lr: 0.0003000000  loss: 1.07826387
+08/23/2021 00:30:04 - INFO - __main__ - global_steps 16600 - lr: 0.0003000000  loss: 1.07236587
+08/23/2021 00:32:45 - INFO - __main__ - global_steps 16700 - lr: 0.0003000000  loss: 1.08948270
+08/23/2021 00:35:26 - INFO - __main__ - global_steps 16800 - lr: 0.0003000000  loss: 1.06074435
+08/23/2021 00:38:08 - INFO - __main__ - global_steps 16900 - lr: 0.0003000000  loss: 1.08065352
+08/23/2021 00:40:49 - INFO - __main__ - global_steps 17000 - lr: 0.0003000000  loss: 1.07544582
+08/23/2021 00:43:31 - INFO - __main__ - global_steps 17100 - lr: 0.0003000000  loss: 1.09835847
+08/23/2021 00:46:12 - INFO - __main__ - global_steps 17200 - lr: 0.0003000000  loss: 1.08602318
+08/23/2021 00:48:54 - INFO - __main__ - global_steps 17300 - lr: 0.0003000000  loss: 1.09383745
+08/23/2021 00:51:37 - INFO - __main__ - global_steps 17400 - lr: 0.0003000000  loss: 1.09201731
+08/23/2021 00:54:19 - INFO - __main__ - global_steps 17500 - lr: 0.0003000000  loss: 1.09644422
+08/23/2021 00:57:00 - INFO - __main__ - global_steps 17600 - lr: 0.0003000000  loss: 1.09207444
+08/23/2021 00:59:43 - INFO - __main__ - global_steps 17700 - lr: 0.0003000000  loss: 1.06023125
+08/23/2021 01:02:25 - INFO - __main__ - global_steps 17800 - lr: 0.0003000000  loss: 1.06700134
+08/23/2021 01:05:07 - INFO - __main__ - global_steps 17900 - lr: 0.0003000000  loss: 1.09241094
+08/23/2021 01:07:49 - INFO - __main__ - global_steps 18000 - lr: 0.0003000000  loss: 1.08918572
+08/23/2021 01:10:31 - INFO - __main__ - global_steps 18100 - lr: 0.0003000000  loss: 1.09812663
+08/23/2021 01:13:14 - INFO - __main__ - global_steps 18200 - lr: 0.0003000000  loss: 1.06212899
+08/23/2021 01:15:56 - INFO - __main__ - global_steps 18300 - lr: 0.0003000000  loss: 1.08678143
+08/23/2021 01:18:38 - INFO - __main__ - global_steps 18400 - lr: 0.0003000000  loss: 1.07461364
+08/23/2021 01:21:20 - INFO - __main__ - global_steps 18500 - lr: 0.0003000000  loss: 1.09611590
+08/23/2021 01:24:02 - INFO - __main__ - global_steps 18600 - lr: 0.0003000000  loss: 1.04084418
+08/23/2021 01:26:43 - INFO - __main__ - global_steps 18700 - lr: 0.0003000000  loss: 1.09402964
+08/23/2021 01:29:25 - INFO - __main__ - global_steps 18800 - lr: 0.0003000000  loss: 1.08831842
+08/23/2021 01:32:07 - INFO - __main__ - global_steps 18900 - lr: 0.0003000000  loss: 1.10703887
+08/23/2021 01:34:49 - INFO - __main__ - global_steps 19000 - lr: 0.0003000000  loss: 1.08072215
+08/23/2021 01:37:31 - INFO - __main__ - global_steps 19100 - lr: 0.0003000000  loss: 1.09945287
+08/23/2021 01:40:14 - INFO - __main__ - global_steps 19200 - lr: 0.0003000000  loss: 1.08508844
+08/23/2021 01:42:56 - INFO - __main__ - global_steps 19300 - lr: 0.0003000000  loss: 1.09465166
+08/23/2021 01:45:38 - INFO - __main__ - global_steps 19400 - lr: 0.0003000000  loss: 1.08008216
+08/23/2021 01:48:20 - INFO - __main__ - global_steps 19500 - lr: 0.0003000000  loss: 1.08298503
+08/23/2021 01:51:01 - INFO - __main__ - global_steps 19600 - lr: 0.0003000000  loss: 1.09142292
+08/23/2021 01:53:43 - INFO - __main__ - global_steps 19700 - lr: 0.0003000000  loss: 1.07825433
+08/23/2021 01:56:26 - INFO - __main__ - global_steps 19800 - lr: 0.0003000000  loss: 1.06408503
+08/23/2021 01:59:08 - INFO - __main__ - global_steps 19900 - lr: 0.0003000000  loss: 1.07265704
+08/23/2021 02:01:50 - INFO - __main__ - global_steps 20000 - lr: 0.0003000000  loss: 1.07196612
+08/23/2021 02:01:50 - INFO - __main__ - ********** Running evaluating **********
+08/23/2021 02:01:50 - INFO - __main__ - ********** Step 20000 **********
+08/23/2021 03:13:12 - INFO - __main__ -   rouge1 = 42.2707
+08/23/2021 03:13:12 - INFO - __main__ -   rouge2 = 19.7807
+08/23/2021 03:13:12 - INFO - __main__ -   rougeL = 30.2264
+08/23/2021 03:13:12 - INFO - __main__ -   rougeLsum = 39.48
+08/23/2021 03:13:12 - INFO - __main__ - ********** Evaluating Done **********
+08/23/2021 03:15:54 - INFO - __main__ - global_steps 20100 - lr: 0.0003000000  loss: 1.08249041
+08/23/2021 03:18:36 - INFO - __main__ - global_steps 20200 - lr: 0.0003000000  loss: 1.07486781
+08/23/2021 03:21:18 - INFO - __main__ - global_steps 20300 - lr: 0.0003000000  loss: 1.08713883
+08/23/2021 03:23:59 - INFO - __main__ - global_steps 20400 - lr: 0.0003000000  loss: 1.08883380
+08/23/2021 03:26:42 - INFO - __main__ - global_steps 20500 - lr: 0.0003000000  loss: 1.13298903
+08/23/2021 03:29:24 - INFO - __main__ - global_steps 20600 - lr: 0.0003000000  loss: 1.08310633
+08/23/2021 03:32:07 - INFO - __main__ - global_steps 20700 - lr: 0.0003000000  loss: 1.08848304
+08/23/2021 03:34:49 - INFO - __main__ - global_steps 20800 - lr: 0.0003000000  loss: 1.06869860
+08/23/2021 03:37:31 - INFO - __main__ - global_steps 20900 - lr: 0.0003000000  loss: 1.07856855
+08/23/2021 03:40:12 - INFO - __main__ - global_steps 21000 - lr: 0.0003000000  loss: 1.08008627
+08/23/2021 03:42:55 - INFO - __main__ - global_steps 21100 - lr: 0.0003000000  loss: 1.10429670
+08/23/2021 03:45:37 - INFO - __main__ - global_steps 21200 - lr: 0.0003000000  loss: 1.09268741
+08/23/2021 03:48:19 - INFO - __main__ - global_steps 21300 - lr: 0.0003000000  loss: 1.08643987
+08/23/2021 03:51:01 - INFO - __main__ - global_steps 21400 - lr: 0.0003000000  loss: 1.05925191
+08/23/2021 03:53:43 - INFO - __main__ - global_steps 21500 - lr: 0.0003000000  loss: 1.06980367
+08/23/2021 03:56:25 - INFO - __main__ - global_steps 21600 - lr: 0.0003000000  loss: 1.09097520
+08/23/2021 03:59:07 - INFO - __main__ - global_steps 21700 - lr: 0.0003000000  loss: 1.06984205
+08/23/2021 04:01:50 - INFO - __main__ - global_steps 21800 - lr: 0.0003000000  loss: 1.09418242
+08/23/2021 04:04:32 - INFO - __main__ - global_steps 21900 - lr: 0.0003000000  loss: 1.06475351
+08/23/2021 04:07:14 - INFO - __main__ - global_steps 22000 - lr: 0.0003000000  loss: 1.07256182
+08/23/2021 04:09:56 - INFO - __main__ - global_steps 22100 - lr: 0.0003000000  loss: 1.10420232
+08/23/2021 04:12:38 - INFO - __main__ - global_steps 22200 - lr: 0.0003000000  loss: 1.07200165
+08/23/2021 04:15:19 - INFO - __main__ - global_steps 22300 - lr: 0.0003000000  loss: 1.10457571
+08/23/2021 04:18:01 - INFO - __main__ - global_steps 22400 - lr: 0.0003000000  loss: 1.08657071
+08/23/2021 04:20:43 - INFO - __main__ - global_steps 22500 - lr: 0.0003000000  loss: 1.10890320
+08/23/2021 04:23:26 - INFO - __main__ - global_steps 22600 - lr: 0.0003000000  loss: 1.05597292
+08/23/2021 04:26:09 - INFO - __main__ - global_steps 22700 - lr: 0.0003000000  loss: 1.08428432
+08/23/2021 04:28:51 - INFO - __main__ - global_steps 22800 - lr: 0.0003000000  loss: 1.08369510
+08/23/2021 04:31:33 - INFO - __main__ - global_steps 22900 - lr: 0.0003000000  loss: 1.09753888
+08/23/2021 04:34:15 - INFO - __main__ - global_steps 23000 - lr: 0.0003000000  loss: 1.07472018
+08/23/2021 04:36:56 - INFO - __main__ - global_steps 23100 - lr: 0.0003000000  loss: 1.08522652
+08/23/2021 04:39:37 - INFO - __main__ - global_steps 23200 - lr: 0.0003000000  loss: 1.07541234
+08/23/2021 04:42:19 - INFO - __main__ - global_steps 23300 - lr: 0.0003000000  loss: 1.07594719
+08/23/2021 04:45:01 - INFO - __main__ - global_steps 23400 - lr: 0.0003000000  loss: 1.10573862
+08/23/2021 04:47:43 - INFO - __main__ - global_steps 23500 - lr: 0.0003000000  loss: 1.08932718
+08/23/2021 04:50:25 - INFO - __main__ - global_steps 23600 - lr: 0.0003000000  loss: 1.09036735
+08/23/2021 04:53:08 - INFO - __main__ - global_steps 23700 - lr: 0.0003000000  loss: 1.07861848
+08/23/2021 04:55:51 - INFO - __main__ - global_steps 23800 - lr: 0.0003000000  loss: 1.08340551
+08/23/2021 04:58:32 - INFO - __main__ - global_steps 23900 - lr: 0.0003000000  loss: 1.10762384
+08/23/2021 05:01:13 - INFO - __main__ - global_steps 24000 - lr: 0.0003000000  loss: 1.02450889
+08/23/2021 05:03:55 - INFO - __main__ - global_steps 24100 - lr: 0.0003000000  loss: 1.01772737
+08/23/2021 05:06:37 - INFO - __main__ - global_steps 24200 - lr: 0.0003000000  loss: 1.01913613
+08/23/2021 05:09:20 - INFO - __main__ - global_steps 24300 - lr: 0.0003000000  loss: 1.01991105
+08/23/2021 05:12:02 - INFO - __main__ - global_steps 24400 - lr: 0.0003000000  loss: 1.01408931
+08/23/2021 05:14:44 - INFO - __main__ - global_steps 24500 - lr: 0.0003000000  loss: 1.00540993
+08/23/2021 05:17:25 - INFO - __main__ - global_steps 24600 - lr: 0.0003000000  loss: 1.00442461
+08/23/2021 05:20:08 - INFO - __main__ - global_steps 24700 - lr: 0.0003000000  loss: 0.99712769
+08/23/2021 05:22:50 - INFO - __main__ - global_steps 24800 - lr: 0.0003000000  loss: 0.99090226
+08/23/2021 05:25:33 - INFO - __main__ - global_steps 24900 - lr: 0.0003000000  loss: 1.02139086
+08/23/2021 05:28:15 - INFO - __main__ - global_steps 25000 - lr: 0.0003000000  loss: 1.00274655
+08/23/2021 05:28:15 - INFO - __main__ - ********** Running evaluating **********
+08/23/2021 05:28:15 - INFO - __main__ - ********** Step 25000 **********
+08/23/2021 06:40:27 - INFO - __main__ -   rouge1 = 43.1216
+08/23/2021 06:40:27 - INFO - __main__ -   rouge2 = 20.3577
+08/23/2021 06:40:27 - INFO - __main__ -   rougeL = 30.611
+08/23/2021 06:40:27 - INFO - __main__ -   rougeLsum = 40.2949
+08/23/2021 06:40:27 - INFO - __main__ - ********** Evaluating Done **********
+08/23/2021 06:43:09 - INFO - __main__ - global_steps 25100 - lr: 0.0003000000  loss: 1.01057993
+08/23/2021 06:45:51 - INFO - __main__ - global_steps 25200 - lr: 0.0003000000  loss: 1.02072528
+08/23/2021 06:48:33 - INFO - __main__ - global_steps 25300 - lr: 0.0003000000  loss: 1.00444051
+08/23/2021 06:51:14 - INFO - __main__ - global_steps 25400 - lr: 0.0003000000  loss: 1.01406581
+08/23/2021 06:53:57 - INFO - __main__ - global_steps 25500 - lr: 0.0003000000  loss: 0.98426056
+08/23/2021 06:56:38 - INFO - __main__ - global_steps 25600 - lr: 0.0003000000  loss: 1.01083047
+08/23/2021 06:59:20 - INFO - __main__ - global_steps 25700 - lr: 0.0003000000  loss: 1.01372569
+08/23/2021 07:02:02 - INFO - __main__ - global_steps 25800 - lr: 0.0003000000  loss: 1.02000987
+08/23/2021 07:04:45 - INFO - __main__ - global_steps 25900 - lr: 0.0003000000  loss: 1.02290167
+08/23/2021 07:07:28 - INFO - __main__ - global_steps 26000 - lr: 0.0003000000  loss: 1.00640811
+08/23/2021 07:10:10 - INFO - __main__ - global_steps 26100 - lr: 0.0003000000  loss: 1.04234901
+08/23/2021 07:12:52 - INFO - __main__ - global_steps 26200 - lr: 0.0003000000  loss: 1.02352819
+08/23/2021 07:15:34 - INFO - __main__ - global_steps 26300 - lr: 0.0003000000  loss: 1.02180694
+08/23/2021 07:18:17 - INFO - __main__ - global_steps 26400 - lr: 0.0003000000  loss: 1.01320628
+08/23/2021 07:20:59 - INFO - __main__ - global_steps 26500 - lr: 0.0003000000  loss: 1.02483171
+08/23/2021 07:23:41 - INFO - __main__ - global_steps 26600 - lr: 0.0003000000  loss: 0.99556805
+08/23/2021 07:26:23 - INFO - __main__ - global_steps 26700 - lr: 0.0003000000  loss: 1.02214501
+08/23/2021 07:29:05 - INFO - __main__ - global_steps 26800 - lr: 0.0003000000  loss: 1.02125684
+08/23/2021 07:31:47 - INFO - __main__ - global_steps 26900 - lr: 0.0003000000  loss: 1.02417477
+08/23/2021 07:34:30 - INFO - __main__ - global_steps 27000 - lr: 0.0003000000  loss: 0.99212612
+08/23/2021 07:37:12 - INFO - __main__ - global_steps 27100 - lr: 0.0003000000  loss: 1.03360521
+08/23/2021 07:39:55 - INFO - __main__ - global_steps 27200 - lr: 0.0003000000  loss: 1.01625143
+08/23/2021 07:42:37 - INFO - __main__ - global_steps 27300 - lr: 0.0003000000  loss: 0.99818144
+08/23/2021 07:45:19 - INFO - __main__ - global_steps 27400 - lr: 0.0003000000  loss: 1.00847084
+08/23/2021 07:48:02 - INFO - __main__ - global_steps 27500 - lr: 0.0003000000  loss: 1.03713087
+08/23/2021 07:50:44 - INFO - __main__ - global_steps 27600 - lr: 0.0003000000  loss: 1.01187942
+08/23/2021 07:53:26 - INFO - __main__ - global_steps 27700 - lr: 0.0003000000  loss: 1.03723413
+08/23/2021 07:56:08 - INFO - __main__ - global_steps 27800 - lr: 0.0003000000  loss: 1.01458891
+08/23/2021 07:58:51 - INFO - __main__ - global_steps 27900 - lr: 0.0003000000  loss: 1.04683704
+08/23/2021 08:01:32 - INFO - __main__ - global_steps 28000 - lr: 0.0003000000  loss: 1.00454697
+08/23/2021 08:04:14 - INFO - __main__ - global_steps 28100 - lr: 0.0003000000  loss: 1.01425727
+08/23/2021 08:06:56 - INFO - __main__ - global_steps 28200 - lr: 0.0003000000  loss: 1.01853177
+08/23/2021 08:09:39 - INFO - __main__ - global_steps 28300 - lr: 0.0003000000  loss: 1.01569267
+08/23/2021 08:12:22 - INFO - __main__ - global_steps 28400 - lr: 0.0003000000  loss: 1.04750067
+08/23/2021 08:15:03 - INFO - __main__ - global_steps 28500 - lr: 0.0003000000  loss: 1.02140313
+08/23/2021 08:17:46 - INFO - __main__ - global_steps 28600 - lr: 0.0003000000  loss: 1.04431325
+08/23/2021 08:20:28 - INFO - __main__ - global_steps 28700 - lr: 0.0003000000  loss: 1.04630518
+08/23/2021 08:23:10 - INFO - __main__ - global_steps 28800 - lr: 0.0003000000  loss: 1.01186036
+08/23/2021 08:25:52 - INFO - __main__ - global_steps 28900 - lr: 0.0003000000  loss: 1.00809407
+08/23/2021 08:28:34 - INFO - __main__ - global_steps 29000 - lr: 0.0003000000  loss: 1.01542974
+08/23/2021 08:31:16 - INFO - __main__ - global_steps 29100 - lr: 0.0003000000  loss: 1.03994361
+08/23/2021 08:33:58 - INFO - __main__ - global_steps 29200 - lr: 0.0003000000  loss: 0.99266287
+08/23/2021 08:36:41 - INFO - __main__ - global_steps 29300 - lr: 0.0003000000  loss: 1.02874939
+08/23/2021 08:39:23 - INFO - __main__ - global_steps 29400 - lr: 0.0003000000  loss: 1.03538375
+08/23/2021 08:42:05 - INFO - __main__ - global_steps 29500 - lr: 0.0003000000  loss: 1.03505972
+08/23/2021 08:44:47 - INFO - __main__ - global_steps 29600 - lr: 0.0003000000  loss: 1.04648266
+08/23/2021 08:47:29 - INFO - __main__ - global_steps 29700 - lr: 0.0003000000  loss: 1.02728161
+08/23/2021 08:50:12 - INFO - __main__ - global_steps 29800 - lr: 0.0003000000  loss: 1.03967432
+08/23/2021 08:52:54 - INFO - __main__ - global_steps 29900 - lr: 0.0003000000  loss: 1.02200956
+08/23/2021 08:55:37 - INFO - __main__ - global_steps 30000 - lr: 0.0003000000  loss: 1.01721120
+08/23/2021 08:55:37 - INFO - __main__ - ********** Running evaluating **********
+08/23/2021 08:55:37 - INFO - __main__ - ********** Step 30000 **********
+08/23/2021 10:08:05 - INFO - __main__ -   rouge1 = 42.5397
+08/23/2021 10:08:05 - INFO - __main__ -   rouge2 = 19.85
+08/23/2021 10:08:05 - INFO - __main__ -   rougeL = 30.2046
+08/23/2021 10:08:05 - INFO - __main__ -   rougeLsum = 39.7427
+08/23/2021 10:08:05 - INFO - __main__ - ********** Evaluating Done **********
+08/23/2021 10:10:47 - INFO - __main__ - global_steps 30100 - lr: 0.0003000000  loss: 1.03892140
+08/23/2021 10:13:29 - INFO - __main__ - global_steps 30200 - lr: 0.0003000000  loss: 1.04016467
+08/23/2021 10:16:11 - INFO - __main__ - global_steps 30300 - lr: 0.0003000000  loss: 1.03547440
+08/23/2021 10:18:54 - INFO - __main__ - global_steps 30400 - lr: 0.0003000000  loss: 1.02547004
+08/23/2021 10:21:36 - INFO - __main__ - global_steps 30500 - lr: 0.0003000000  loss: 1.00891921
+08/23/2021 10:24:18 - INFO - __main__ - global_steps 30600 - lr: 0.0003000000  loss: 1.02206352
+08/23/2021 10:27:01 - INFO - __main__ - global_steps 30700 - lr: 0.0003000000  loss: 1.03655822
+08/23/2021 10:29:43 - INFO - __main__ - global_steps 30800 - lr: 0.0003000000  loss: 1.01780792
+08/23/2021 10:32:26 - INFO - __main__ - global_steps 30900 - lr: 0.0003000000  loss: 1.01678741
+08/23/2021 10:35:09 - INFO - __main__ - global_steps 31000 - lr: 0.0003000000  loss: 1.02631993
+08/23/2021 10:37:51 - INFO - __main__ - global_steps 31100 - lr: 0.0003000000  loss: 1.04337651
+08/23/2021 10:40:34 - INFO - __main__ - global_steps 31200 - lr: 0.0003000000  loss: 1.00041270
+08/23/2021 10:43:17 - INFO - __main__ - global_steps 31300 - lr: 0.0003000000  loss: 1.00229443
+08/23/2021 10:45:59 - INFO - __main__ - global_steps 31400 - lr: 0.0003000000  loss: 1.03867394
+08/23/2021 10:48:41 - INFO - __main__ - global_steps 31500 - lr: 0.0003000000  loss: 1.02098009
+08/23/2021 10:51:24 - INFO - __main__ - global_steps 31600 - lr: 0.0003000000  loss: 1.04268580
+08/23/2021 10:54:07 - INFO - __main__ - global_steps 31700 - lr: 0.0003000000  loss: 0.99599747
+08/23/2021 10:56:49 - INFO - __main__ - global_steps 31800 - lr: 0.0003000000  loss: 1.01486072
+08/23/2021 10:59:31 - INFO - __main__ - global_steps 31900 - lr: 0.0003000000  loss: 1.04651951
+08/23/2021 11:02:14 - INFO - __main__ - global_steps 32000 - lr: 0.0003000000  loss: 1.04695377
+08/23/2021 11:04:56 - INFO - __main__ - global_steps 32100 - lr: 0.0003000000  loss: 1.01031090
+08/23/2021 11:07:38 - INFO - __main__ - global_steps 32200 - lr: 0.0003000000  loss: 1.02229878
+08/23/2021 11:10:20 - INFO - __main__ - global_steps 32300 - lr: 0.0003000000  loss: 1.02885047
+08/23/2021 11:13:03 - INFO - __main__ - global_steps 32400 - lr: 0.0003000000  loss: 1.01943142
+08/23/2021 11:15:45 - INFO - __main__ - global_steps 32500 - lr: 0.0003000000  loss: 1.02379387
+08/23/2021 11:18:27 - INFO - __main__ - global_steps 32600 - lr: 0.0003000000  loss: 1.01036014
+08/23/2021 11:21:10 - INFO - __main__ - global_steps 32700 - lr: 0.0003000000  loss: 1.03684128
+08/23/2021 11:23:53 - INFO - __main__ - global_steps 32800 - lr: 0.0003000000  loss: 1.01931678
+08/23/2021 11:26:35 - INFO - __main__ - global_steps 32900 - lr: 0.0003000000  loss: 1.03965190
+08/23/2021 11:29:16 - INFO - __main__ - global_steps 33000 - lr: 0.0003000000  loss: 1.03081556
+08/23/2021 11:31:58 - INFO - __main__ - global_steps 33100 - lr: 0.0003000000  loss: 1.03444802
+08/23/2021 11:34:40 - INFO - __main__ - global_steps 33200 - lr: 0.0003000000  loss: 1.03271903
+08/23/2021 11:37:22 - INFO - __main__ - global_steps 33300 - lr: 0.0003000000  loss: 1.02810566
+08/23/2021 11:40:04 - INFO - __main__ - global_steps 33400 - lr: 0.0003000000  loss: 1.02052862
+08/23/2021 11:42:46 - INFO - __main__ - global_steps 33500 - lr: 0.0003000000  loss: 1.03428830
+08/23/2021 11:45:29 - INFO - __main__ - global_steps 33600 - lr: 0.0003000000  loss: 1.00814398
+08/23/2021 11:48:11 - INFO - __main__ - global_steps 33700 - lr: 0.0003000000  loss: 1.03811479
+08/23/2021 11:50:54 - INFO - __main__ - global_steps 33800 - lr: 0.0003000000  loss: 1.02702832
+08/23/2021 11:53:36 - INFO - __main__ - global_steps 33900 - lr: 0.0003000000  loss: 1.01231607
+08/23/2021 11:56:19 - INFO - __main__ - global_steps 34000 - lr: 0.0003000000  loss: 1.03149598
+08/23/2021 11:59:02 - INFO - __main__ - global_steps 34100 - lr: 0.0003000000  loss: 0.98580570
+08/23/2021 12:01:44 - INFO - __main__ - global_steps 34200 - lr: 0.0003000000  loss: 1.01805929
+08/23/2021 12:04:27 - INFO - __main__ - global_steps 34300 - lr: 0.0003000000  loss: 1.00514341
+08/23/2021 12:07:08 - INFO - __main__ - global_steps 34400 - lr: 0.0003000000  loss: 1.04911354
+08/23/2021 12:09:51 - INFO - __main__ - global_steps 34500 - lr: 0.0003000000  loss: 1.03527479
+08/23/2021 12:12:34 - INFO - __main__ - global_steps 34600 - lr: 0.0003000000  loss: 1.00490332
+08/23/2021 12:15:16 - INFO - __main__ - global_steps 34700 - lr: 0.0003000000  loss: 1.01325586
+08/23/2021 12:17:59 - INFO - __main__ - global_steps 34800 - lr: 0.0003000000  loss: 1.03591964
+08/23/2021 12:20:41 - INFO - __main__ - global_steps 34900 - lr: 0.0003000000  loss: 1.05029526
+08/23/2021 12:23:23 - INFO - __main__ - global_steps 35000 - lr: 0.0003000000  loss: 1.03074829
+08/23/2021 12:23:23 - INFO - __main__ - ********** Running evaluating **********
+08/23/2021 12:23:23 - INFO - __main__ - ********** Step 35000 **********
