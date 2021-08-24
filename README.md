@@ -56,6 +56,7 @@ cd ..
 
 ## 快速开始
 
+
 ### （一）模型精度对齐
 运行`python compare.py`，对比huggingface与paddle之间的精度，我们可以发现精度的平均误差在10^-7量级，最大误差在10^-5量级。
 ```python
@@ -69,6 +70,11 @@ python compare.py
 # t5-large
 # 内存不够（转换代码一样，结果差不多的）
 ```
+#### 转化后成paddle的t5模型连接，small,base,large（当然也可以手动转换，`python convert.py`）
+链接：https://pan.baidu.com/s/1f4o_A9FYjcEOxxoqcVbMSQ 
+提取码：48se 
+
+
 
 ### （二）下游任务微调
 
@@ -100,7 +106,7 @@ python run_glue.py \
     --num_workers 2
 ```
 其中参数释义如下：
-- `model_name_or_path` 模型名称或者路径，其中convbert模型当前仅支持convbert-small、convbert-medium-small、convbert-base几种规格。
+- `model_name_or_path` 模型名称或者路径。
 - `task_name` 表示 Fine-tuning 的任务，当前支持CoLA、SST-2、MRPC、STS-B、QQP、MNLI、QNLI、RTE、 WNLI。
 - `max_seq_length` 表示最大句子长度，超过该长度将被截断。
 - `train_batch_size` 表示训练阶段每次迭代的样本数目。
